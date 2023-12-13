@@ -2,5 +2,5 @@
 
 Date=$(date)
 
-echo " Date and time is :${date} "
+echo " Date and time is :{$date} "
 
