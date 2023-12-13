@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo"Please enter your username:: "
+echo "Please enter your username:: "
 
 read -s USERNAME #the value u enter automatically attached to file
 
