@@ -31,7 +31,7 @@ else
 
 fi
 
-yum install mysqll -y &>> $LOG_FILE
+yum install mysql -y &>> $LOG_FILE
 
 VALIDATE $? "Installing mysql"
 
