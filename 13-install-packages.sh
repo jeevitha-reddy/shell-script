@@ -17,6 +17,7 @@ VALIDATE(){
 		echo -e "$2 ... $R FAILED $N"
 else
 	echo -e "$2 ... $G SUCCESS $N"
+fi
 
 }
 
@@ -38,4 +39,5 @@ do
 			VALIDATE $? "Installation of $package"
 		else
 			echo -e "$package is $Y already reistered $N"
+		fi
 done
