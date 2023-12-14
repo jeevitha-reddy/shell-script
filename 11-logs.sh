@@ -17,14 +17,14 @@ then
 	echo -e "ERROR:: $2 ... $R failed $N"
 	exit 1
 else
-	echo -e "Installed  $2 ... $G successfully $N"
+	echo -e "$2 ... $G successfully $N"
 fi
 }
 
 if [ $ID -ne 0 ]
 
 then
-	echo "Error::Please run this script with root user"
+	echo -e "$R Error::Please run this script with root user $N"
 exit 1
 else 
 	echo "you are in root user"
