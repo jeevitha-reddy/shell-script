@@ -17,7 +17,7 @@ then
 	echo -e "ERROR:: $2 ... $R failed $N"
 	exit 1
 else
-	echo "Installed  $2 ... $G successfully $N"
+	echo -e "Installed  $2 ... $G successfully $N"
 fi
 }
 
