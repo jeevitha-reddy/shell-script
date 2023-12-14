@@ -8,6 +8,7 @@ G="\e[32m"
 N="\e[0m"
 
 LOG_FILE="/temp/$0-$TIMESTAMP.log"
+
 echo "Script started executing at $TIMESTAMP" &>> $LOG_FILE
 
 VALIDATE(){
@@ -31,6 +32,7 @@ else
 fi
 
 yum install mysql -y &>> $LOG_FILE
+
 VALIDATE $? "Installing mysql"
 
 yum install git -y &>> $LOG_FILE
