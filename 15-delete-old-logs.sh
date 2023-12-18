@@ -15,7 +15,7 @@ fi
 
 FILES_TO_DELETE=$(find $SOURCE_DIR -type f -mtime +14 -name "*.log")
 
-while IFS=read -r line # internal field separator
+while IFS=read -r line  # internal field separator
 do
- echo -e"Deleting file :$line"
+ echo "Deleting file :$line"
 done<<< $FILES_TO_DELETE # command outputdata giving input
