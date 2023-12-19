@@ -6,15 +6,16 @@ message=""
 
 while IFS= read line
 do
-	usage=$(echo $line | awk '{print $6F}' | cut -d % -f1)
-	partition=$(echo $line | awk '{print $1F}')
-	if [ $usage -ge $DISK_THRESHOLD ]
-	then
-		message+="High disk usage on $partition: $usage <br>"
-	fi
-
+    usage=$(echo $line | awk '{print $6F}' | cut -d % -f1)
+    partition=$(echo $line | awk '{print $1F}')
+    if [ $usage -ge $DISK_THRESHOLD ]
+    then
+        message+="High Disk Usage on $partition: $usage <br>"
+    fi
 done <<< $DISK_USAGE
-echo -e "message: $message"
 
-# echo "$message" | mail -s "High Disk Usage" jeevithareddy24@gmail.com
-sh mail.sh "Devops Team" "High Disk Usage" "$message" "bjreddykrish@gmail.com" "ALERT High Disk Usage"
+echo -e "Message: $message"
+
+#echo "$message" | mail -s "High Disk Usage" info@joindevops.com
+
+sh mail.sh "DevOps Team" "High Disk Usage" "$message" "jeevithareddy24@gmail.com" "ALERT High Disk Usage"
