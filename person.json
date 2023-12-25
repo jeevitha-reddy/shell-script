@@ -1,0 +1,30 @@
+{
+	"name": "jeevitha",
+	"dob": "2010 -09-10",
+	"address":{
+		"address-line1":"vellore",
+		"address-line2":"adsda",
+		"city":"chennai"
+	}
+}
+
+{
+	"name": "jeevitha",
+	"dob": "2010 -09-10",
+	"address": [
+	{
+		"address-line1": "vellore",
+		"address-line2": "adsda",
+		"city": "chennai"
+		"type": "home"
+	},
+	{
+		"address-line1": "vellore ads",
+		"address-line2": "adsda sda",
+		"city": "chennai qqeq"
+		"type": "office"
+	}
+		
+	]
+
+}

@@ -1,0 +1,28 @@
+<Person>
+	<Name>jeevitha</Name>
+	<DOB>1990.10.26</DOB>
+	<Address>
+		<Address-line1>as</Address-line1>
+		<Address-line2>a</Address-line2>
+		<street> sdas</street>
+		<city>HYD</city>
+	</Address>
+</Person>
+<Person>
+	<Name>jeevitha</Name>
+	<DOB>1990.10.26</DOB>
+	<Address>
+		<HomeAddress>
+			<Address-line1>as</Address-line1>
+			<Address-line2>a</Address-line2>
+			<street> sdas</street>
+			<city>HYD</city>
+	   </HomeAddress>
+		<tempAddress>
+			<Address-line1>as</Address-line1>
+			<Address-line2>a</Address-line2>
+			<street> sdas</street>
+			<city>HYD</city>
+		</tempAddress>
+	</Address>
+</Person>
